@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+   
+}
+
+ol,
+ul {
+    list-style: none;
+   
+   
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container1{
+    margin: 0 auto;
+    width: 1200px;
+
+
+}
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+
+/* Helper */
+.ptb-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.p-50{
+    padding: 100px;
+}
+.color-red{
+    color: red;
+
+}
+.color-blue{
+    color: blue;
+
+}
+.color-green{
+    color: green;
+
+
+}
+.bg-white{
+background-color: #fff;
+}
+
+.text-grey{
+    color: #767676;
+}
+
+.border{
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+
+}
+/*End of Helper */
+
+
+
