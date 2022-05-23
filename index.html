@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <!--main-header section -->
+    <!--  main-header section-->
     <section class="main-header">
         <div class="container">
 
@@ -25,7 +25,8 @@
             <div class="row">
 
                 <div class="logo">
-                    <img src="images/logo.png" alt="No logo found" width="100">
+                    <!-- <img src="images/logo.png" alt="No logo found" width="100"> -->
+                     <i class="fa-brands fa-apple"></i>
                 </div>
                 <div class="menu">
                     <ul>
@@ -36,55 +37,60 @@
                         <li><b><a href="#">Services</a></b></li>
                         <li><b><a href="#">Shop</a></b></li>
                         <li><b><a href="#">Login</a></b></li>
-                        <li><b><a href="#"><img src="images/search-logo.png" width="30"></a></b></li>
-                        <li><b><a href="#"><img src="images/cart-logo.png" width="30"></a></b></li>
+                        <li><b><a href="#"><i class="fa-solid fa-magnifying-glass "></i></a></b></li>
+                        <li><b><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></b></li>
                     </ul>
                 </div>
             </div>
         </div>
+        <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+            <div class="overlay">
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-indicators carousel-indicator-pb-20">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" 
+              class="active carousel-button" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" 
+              aria-label="Slide 2" class=" carousel-button "></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" 
+              aria-label="Slide 3" class=" carousel-button"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-
-
-                    <img src="images/slider-1.jpg" class="d-block w-100" alt="...">
-
-
-
-                </div>
-                <div class="carousel-item">
-                    <img src="images/slider-2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/slider-3.jpg" class="d-block w-100" alt="...">
-                </div>
+              <div class="carousel-item active">
+                <img src="images/slider-1.jpg" style="height:700px ;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h1 class="pb-10">Get Started with <br> Plugin Development</h1>
+                        <p class="p-font pb-10">Access 50+ Plugins</p>
+                        <button class="button-primary">Get started</button>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/slider-2.jpg" style="height:700px ;" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/slider-3.jpg" style="height:700px ;" class="d-block w-100" alt="...">
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" 
+            data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" 
+            data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"></span>
             </button>
-        </div>
+          </div>
+
+       
     </section>
     <!--End main-header section -->
 
 
     <!-- first section -->
-    <section class="first-section ptb-100">
+    <section class="first-section pt-100 pb-100">
 
         <div class="description ">
             <h1>How does it Work?</h1>
@@ -93,14 +99,14 @@
         </div><br><br>
 
         <div class="container">
-            <div class="row">
-                <div class="col-3 bg-white prl-50 ptb-100 border ">
+            <div class="row ">
+                <div class="col-3 bg-white prl-50 pt-100 pb-100 border ">
                     <i class="fa-brands fa-xbox color-red pb-30"></i>
                     <h5 class>User Experience</h5>
                     <p class="text-grey">Update your online business experience to 2017 standards. Increase
                         your earnings.</p>
                 </div>
-                <div class="col-4 bg-white prl-50 ptb-100 border ">
+                <div class="col-4 bg-white prl-50 pt-100 pb-100 border ">
                     <i class="fa-brands fa-xbox color-blue pb-30"></i>
                     <h5>User Experience</h5>
                     <p class="text-grey">Update your online business experience to 2017 standards. Increase
@@ -108,7 +114,7 @@
                 </div>
 
 
-                <div class="col-3 bg-white prl-50 ptb-100 border  ">
+                <div class="col-3 bg-white prl-50 pt-100 pb-100 border  ">
                     <i class="fa-brands fa-xbox color-green pb-30"></i>
                     <h5>User Experience</h5>
                     <p class="text-grey">Update your online business experience to 2017 standards. Increase
@@ -128,8 +134,16 @@
     <!-- second section -->
     <section class="second-section">
         <div class="row">
-            <div class="col-8">col-8
+            <div class="col-8"> 
+                <div class="description">
+                <h4>New <b>CodeManas </b>Plugin </h4>
+                <p class="p-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione eveniet  
+                    reprehenderit incidunt facilis mollitia quis quas. Amet explicabo placeat quod 
+                     culpa minima. Nesciunt odio omnis nobis cupiditate natus mollitia vitae!Lorem  
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa fugiat. 
+                    </p>
 
+                </div>
             </div>
             <div class="col-4">
                 <img src="images/image1.jpg" alt="">
@@ -148,15 +162,12 @@
         <div class="row">
             <div class="col-4">
                 <h4><b>Finely-Tuned </b> </h4>
-                <h4>For Business</h4><br><br>
+                <h4 class="pb-20">For Business</h4>
                 <p>Lorem ipsum dolor <br> amet consectetur adipisicing elit. <br> Laborum delectus.</p>
             </div>
             <div class="col-md-4"> <img src="images/image2.jpg" alt=""></div>
             <div class="col-4">
-                <h4><b>Finely-Tuned </b> </h4>
-
-                <h4>For
-                    Business</h4><br><br>
+                <h4 class="pb-20"><b>Tiny</b> Component</h4>
                 <p>Lorem ipsum dolor <br> amet consectetur adipisicing elit. <br> Laborum delectus.</p>
             </div>
         </div>
@@ -176,6 +187,15 @@
                 <img src="images/image1.jpg" alt="">
             </div>
             <div class="col-8">
+                <div class="description">
+                    <h4> <b>Awards </b>by our Plugin </h4>
+                    <p class="p-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione eveniet  
+                        reprehenderit incidunt facilis mollitia quis quas. Amet explicabo placeat quod 
+                         culpa minima. Nesciunt odio omnis nobis cupiditate natus mollitia vitae!Lorem  
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa fugiat. 
+                        </p>
+    
+                    </div>
 
             </div>
         </div>
@@ -187,55 +207,102 @@
     <section class="fifth-section">
         <div class="description">
             <h2>Our Pricing</h2><br>
-            <p class="text-grey p-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nisi sequi eum
+            <p class="text-grey p-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nisi sequi
+                eum
                 delectus <br> sint. Lorem ipsum, dolor sit amet consectetur. </p>
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row pb-50 ">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/image9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                        <h2 class="card-title pb-20 ">$56</h2>
+                        <h6 class="pb-20">Single License</h6>
+                        <p class="pb-20">1 plugin included <br>
+                            1 year of updates and support <br>
+                            20% of future purchase</p>
+
+                        <a href="#" class="button-primary ">Purchase</a>
+                    </div>
+                </div>
                 <div class="card" style="width: 18rem;">
                     <img src="images/image9.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h2 class="card-title pb-20 ">$56</h2>
-                      <h6 class="pb-20" >Single License</h6>
-                      <p class="pb-20">1 plugin included <br>
-                      1 year of updates and support <br>
-                      20% of future purchase</p>
+                        <h2 class="card-title pb-20 ">$56</h2>
+                        <h6 class="pb-20">Single License</h6>
+                        <p class="pb-20">1 plugin included <br>
+                            1 year of updates and support <br>
+                            20% of future purchase</p>
 
-                      <a href="#" class="button-primary ">Purchase</a>
+                        <a href="#" class="button-primary ">Purchase</a>
                     </div>
-                  </div>
-                  <div class="card" style="width: 18rem;">
+                </div>
+                <div class="card" style="width: 18rem;">
                     <img src="images/image9.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h2 class="card-title pb-20 ">$56</h2>
-                      <h6 class="pb-20" >Single License</h6>
-                      <p class="pb-20">1 plugin included <br>
-                      1 year of updates and support <br>
-                      20% of future purchase</p>
+                        <h2 class="card-title pb-20 ">$56</h2>
+                        <h6 class="pb-20">Single License</h6>
+                        <p class="pb-20">1 plugin included <br>
+                            1 year of updates and support <br>
+                            20% of future purchase</p>
 
-                      <a href="#" class="button-primary ">Purchase</a>
+                        <a href="#" class="button-primary ">Purchase</a>
                     </div>
-                  </div>
-                  <div class="card" style="width: 18rem;">
-                    <img src="images/image9.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h2 class="card-title pb-20 ">$56</h2>
-                      <h6 class="pb-20" >Single License</h6>
-                      <p class="pb-20">1 plugin included <br>
-                      1 year of updates and support <br>
-                      20% of future purchase</p>
+                </div>
 
-                      <a href="#" class="button-primary ">Purchase</a>
-                    </div>
-                  </div>
-                  
             </div>
         </div>
-        
+
 
 
     </section>
     <!--End fifth section -->
+
+
+     <!-- sixth section -->
+     <section class="sixth-section">
+        <div class="description pt-50 pb-30">
+            <h2>We got you covered</h2><br>
+            <p class="text-grey p-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nisi sequi
+                eum
+                delectus <br> sint. Lorem ipsum, dolor sit amet consectetur. </p>
+        </div>
+
+        <div class="container">
+            <div class="row pb-100">
+                <div class="col-6">
+                    <img src="images/image10.jpg" alt="">
+                </div>
+                <div class="col-6 ">
+                    <div class="row ">
+                        <div class="col "><img src="images/image11.jpg" alt="" class="pb-20">
+                            <h4 class="pb-10">Awesome Design</h4>
+                            <p >Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. <br> Culpa, corrupti? Aliquam porro <br> nemo quaerat laboriosam ipsum <br> nobis alias atque. Excepturi <br> sed minima aspernatur.</p>
+                        </div>
+                        <div class="col"><img src="images/image11.jpg" alt="" class="pb-20">
+                            <h4 class="pb-10">Awesome Design</h4>
+                            <p >Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. <br> Culpa, corrupti? Aliquam porro <br> nemo quaerat laboriosam ipsum <br> nobis alias atque. Excepturi <br> sed minima aspernatur.</p>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col pt-100"><img src="images/image11.jpg" alt="" class="pb-20">
+                            <h4 class="pb-10">Awesome Design</h4>
+                            <p >Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. <br> Culpa, corrupti? Aliquam porro <br> nemo quaerat laboriosam ipsum <br> nobis alias atque. Excepturi <br> sed minima aspernatur.</p>
+                        </div>
+                        <div class="col pt-100"><img src="images/image11.jpg" alt="" class="pb-20">
+                            <h4 class="pb-10">Awesome Design</h4>
+                            <p >Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. <br> Culpa, corrupti? Aliquam porro <br> nemo quaerat laboriosam ipsum <br> nobis alias atque. Excepturi <br> sed minima aspernatur.</p>
+                        </div>
+                        
+                     
+                        
+                      </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End sixth section -->
 
 
     <!-- seventh section -->
@@ -298,9 +365,9 @@
     <!--End eight section -->
 
 
-    
+
     <footer>
-    <!-- footer section -->
+        <!-- footer section -->
         <section class="footer">
             <div class="container">
                 <div class="row ">
@@ -359,9 +426,9 @@
                 </p>
             </div>
         </section>
-         <!--End super-footer section -->
+        <!--End super-footer section -->
     </footer>
-   
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
