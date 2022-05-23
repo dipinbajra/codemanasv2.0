@@ -116,8 +116,10 @@
 }
 
 .second-section .row .col-4 {
-    padding: 0px
+   
+    padding: 0px;
 }
+
 
 .second-section .row .col-4 img {
     width: 100%;
@@ -127,6 +129,9 @@
 
 
 /* third section */
+
+  
+
 .third-section .row .col-md-4 {
     padding: 0;
 }
@@ -145,6 +150,11 @@
 }
 
 /*End third section */
+
+
+
+
+/*End fourth-section */
 
 
 /* fifth section */
@@ -229,6 +239,8 @@
     padding: 50px 255px 50px 250px;
     justify-content: space-between;
     align-items: center;
+    margin-left:0px;
+    margin-right: 0px;
 }
 
 .eight-section .row button {
