@@ -298,3 +298,22 @@
 }
 
 /*End super-footer section */
+
+
+/* underline  */
+.underline {
+    position: relative;
+}
+
+.underline::after{
+   content: '';
+    width: 60px;
+    border-bottom: 3px solid;
+    padding-bottom:10px;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+
+}
+
+/*End underline  */

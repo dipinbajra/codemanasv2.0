@@ -101,6 +101,9 @@ p{
 
     padding-bottom: 50px;
 }
+.pt-10{
+    padding-top: 10px;
+}
 .pb-10{
     padding-bottom: 10px;
 }
@@ -155,14 +158,6 @@ background-color: #fff;
 }
 /*End of Helper */
 
-.underline{
-    text-decoration:underline ;
-    
-    
-}
-.underline::after{
- 
-}
 
 
 
