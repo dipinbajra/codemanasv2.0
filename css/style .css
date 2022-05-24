@@ -1,11 +1,26 @@
 @import url(reset.css);
+img{
+    max-width: 100%;
+}
+a{
+    word-break:break-all;
+}
+/*Flex Utilities*/
+/* why because p-3 is 1 rem in bootstrap */
+.flex-gap-3{
+    gap: 1rem;
+}
+
+.flex-gap-2{
+    gap: 0.5rem;
+}
 
 
 /* main-header section */
 
 
-.main-header .row {
-    padding: 20px 17%;
+.navbar .row {
+    padding: 20px 14%;
     justify-content: space-between;
     align-items: center;
     position: absolute;
@@ -17,32 +32,32 @@
 
 }
 
-.main-header .row .logo i {
+.navbar .row .logo i {
     font-size: 50px;
     color: #F08080;
 }
 
-.main-header .menu ul {
+.navbar .menu ul {
     display: inline-flex;
     margin-bottom: 0;
 
 
 }
 
-.main-header .menu ul li {
+.navbar .menu ul li {
     margin-left: 20px;
     text-transform: uppercase;
 
 }
 
-.main-header .menu ul li a {
+.navbar .menu ul li a {
     text-decoration: none;
     color: #000;
     font-size: 15px;
     color: #F08080;
 }
 
-.main-header .menu ul li a i {
+.navbar .menu ul li a i {
     font-size: 20px;
 }
 
@@ -93,8 +108,10 @@
 
 .first-section .row {
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    
 }
+
 
 .first-section .row i {
     font-size: 70px;
@@ -105,23 +122,22 @@
 
 /* second section */
 
-.second-section .row .col-8 {
+.second-section .row .col-xl-8 {
     background-color: #303d72;
     color: #FFF;
+    padding: 1.5rem;
+
     
 }
-.second-section .row .col-8 .description{
-    text-align: left;
-    padding: 120px 200px;
-}
 
-.second-section .row .col-4 {
+
+.second-section .row .col-xl-4 {
    
     padding: 0px;
 }
 
 
-.second-section .row .col-4 img {
+.second-section .row .col-xl-4 img {
     width: 100%;
 }
 
@@ -130,7 +146,9 @@
 
 /* third section */
 
-  
+.third-section .row .col-xl-4{
+    text-align: center;
+}  
 
 .third-section .row .col-md-4 {
     padding: 0;
@@ -140,14 +158,15 @@
     width: 100%
 }
 
+
+
 .third-section {
     background-color: #f5f5f5;
 }
-
-.third-section .row .col-4 {
-    padding: 130px;
-    margin: auto 0;
+.third-section .row{
+    padding:  1.5rem;
 }
+
 
 /*End third section */
 
@@ -167,12 +186,12 @@
 }
 
 .fifth-section .row {
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .fifth-section .row .card img {
-    width: 270px;
-    height: 200px;
+    width: 290px;
+    height: 220px;
     padding: 30px 50px 0px 50px;
 
 }
@@ -215,12 +234,13 @@
 }
 
 .seventh-section .row {
-    justify-content: space-evenly;
-    padding-bottom: 100px;
+    justify-content: space-around;
+    
 }
 
 .seventh-section .row .card .card-body {
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .seventh-section h2 {
@@ -236,12 +256,17 @@
 .eight-section .row {
     background-color: #303d72;
     color: #FFF;
-    padding: 50px 255px 50px 250px;
     justify-content: space-between;
     align-items: center;
     margin-left:0px;
     margin-right: 0px;
+    padding: 1.5rem;
+    
 }
+
+
+
+    
 
 .eight-section .row button {
     color: #303d72;
@@ -250,6 +275,7 @@
     font-family: 'ubuntu', sans-serif;
     font-weight: 300;
 }
+
 
 /*End eight section */
 
@@ -260,24 +286,23 @@
 }
 
 
-.footer .row .col-3 {
-    text-align: left;
-    padding: 50px 45px;
+.footer .row{
+    padding: 1.5rem 0;
 }
 
-.footer .row .col-3 .icons {
+.footer .row .col-xl-3 .icons {
     font-size: 21px;
 }
 
-.footer .row .col-3 h3 {
+.footer .row .col-xl-3 h3 {
     font-size: 40px;
 }
 
-.footer .row .col-3 h4 {
+.footer .row .col-xl-3 h4 {
     padding-bottom: 15px;
 }
 
-.footer .row .col-3 .icons i {
+.footer .row .col-xl-3 .icons i {
     background-color: black;
     color: white;
     height: 32px;
@@ -317,3 +342,47 @@
 }
 
 /*End underline  */
+
+/* Responsive */
+@media screen and (min-width:1200px) {
+    .second-section .row .col-xl-8 .description{
+        text-align: left;
+        padding: 120px 200px;
+    }  
+
+    .second-section .row .col-xl-8{
+        padding: 0;
+    }
+    
+    .third-section .row{
+        padding:0rem;
+
+    }
+
+    .third-section .row .col-xl-4 {
+       
+        padding: 100px 120px;
+        text-align: left;
+    }
+    .third-section .row .col-md-4 img{
+        height: 400px;
+    }
+    .seventh-section .row  {
+        padding-bottom: 50px;
+        margin: 0;
+    }
+
+
+    .eight-section .row {
+        padding: 50px 210px 50px 210px;
+    }
+
+   
+    .footer .row  {
+   
+        padding: 50px 20px 0px 20px ;
+        
+    }
+}
+
+/*End Responsive */
