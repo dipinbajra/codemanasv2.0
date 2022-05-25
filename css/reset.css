@@ -11,6 +11,9 @@
     margin:0 ;
    
 }
+.navbar{
+    padding: 0;
+}
 
 body {
     font-family: 'Ubuntu', sans-serif;
@@ -63,29 +66,19 @@ h6 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
 }
+a{
+    word-break:break-all;
+    text-decoration: none;
+}
 
 p{
     font-size: 12px;
     font-weight: 500;
 }
 
-.button-primary{
-    background-color: #2f3c73;
-    color: #fff;
-    padding: 10px 30px;
-    font-family: 'ubuntu' sans-serif;
-    font-weight: 300;
-    margin-bottom: 20px;
-    border: none;
 
 
-}
 
-.button-primary:hover{
-    color: #fff;
-    text-decoration: none;
-    background-color: #767676;
-}
 
 
 /* Helper */

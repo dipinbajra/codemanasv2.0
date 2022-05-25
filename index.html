@@ -11,19 +11,19 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="css/style .css">
-
+    <script src="js/main.js" ></script>
 
 
 </head>
 
 <body>
-    <!-- navbar section -->
-    <div class="navbar">
+     <!-- navbar section -->
+    <section class="navbar">
    
-        <div class="container">
+         <div class="container"> 
 
 
-            <div class="row">
+            <div class="row"> 
 
                 <div class="logo">
                   
@@ -42,12 +42,25 @@
                         <li><b><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></b></li>
                     </ul>
                 </div>
+                <div class="responsive-menu-container" onclick="openResponsive(this)">
+                    <i class="fa-solid fa-bars icon"></i>
+                    <div class="responsive-menu">
+                      <ul>
+                        <li><b><a href="#">Home</a></b></li>
+                        <li><b> <a href="#">About</a></b></li>
+                        <li><b><a href="#">Services</a></b></li>
+                        <li><b><a href="#">Contact</a></b></li>
+                      </ul>
+                    </div>
+                  </div>
             </div>
         </div>
-    </div>    
-    <!--End navbar section -->
+    </section>    
+    <!--End navbar section -->    
     <!--  main-header section -->
     <section class="main-header">
+       
+    
        
         <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
             
@@ -65,7 +78,7 @@
                     <div class="carousel-caption">
                         <h1 class="pb-10">Get Started with <br> Plugin Development</h1>
                         <p class="p-font pb-10">Access 50+ Plugins</p>
-                        <button class="button-primary">Get started</button>
+                        <a href="#" class="button-primary">Get started</a>
                     </div>
               </div>
               <div class="carousel-item">
@@ -93,13 +106,14 @@
 
 
     <!-- first section -->
-    <section class="first-section pt-100 pb-100">
+    <section class="first-section pt-50 pb-50">
 
         <div class="description ">
             <h1>How does it Work?</h1>
             <br>
-            <p class="text-grey p-font">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div><br><br>
+            <p class="text-grey p-font">Lorem ipsum dolor sit, amet consectetur adipisicing. Amet explicabo <br>placeat quod 
+                culpa minima.</p>
+        </div>
 
         <div class="container">
             <div class="row p-4 flex-gap-3">
@@ -273,25 +287,25 @@
 
         <div class="container">
             <div class="row ">
-                <div class="col-xl-6 col-sm-3">
+                <div class="col-xl-6 ">
                     <img src="images/image10.jpg" alt="">
                 </div>
                 <div class="col-xl-6 ">
-                    <div class="row pb-50 pt-50">
-                        <div class="col "><img src="images/image11.jpg" alt="" class="pb-20">
+                    <div class="row pb-50 pt-30 ">
+                        <div class="col-xl pt-50 "><img src="images/image11.jpg" alt="" class="pb-20">
                             <h4 class="pb-10">Awesome Design</h4>
                             <p >Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. <br> Culpa, corrupti? Aliquam porro <br> nemo quaerat laboriosam ipsum <br> nobis alias atque. Excepturi <br> sed minima aspernatur.</p>
                         </div>
-                        <div class="col"><img src="images/image11.jpg" alt="" class="pb-20">
+                        <div class="col-xl pt-50"><img src="images/image11.jpg" alt="" class="pb-20">
                             <h4 class="pb-10">Awesome Design</h4>
                             <p >Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. <br> Culpa, corrupti? Aliquam porro <br> nemo quaerat laboriosam ipsum <br> nobis alias atque. Excepturi <br> sed minima aspernatur.</p>
                         </div>
                         <div class="w-100"></div>
-                        <div class="col pt-50"><img src="images/image11.jpg" alt="" class="pb-20">
+                        <div class="col-xl pt-50"><img src="images/image11.jpg" alt="" class="pb-20">
                             <h4 class="pb-10">Awesome Design</h4>
                             <p >Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. <br> Culpa, corrupti? Aliquam porro <br> nemo quaerat laboriosam ipsum <br> nobis alias atque. Excepturi <br> sed minima aspernatur.</p>
                         </div>
-                        <div class="col pt-50"><img src="images/image11.jpg" alt="" class="pb-20">
+                        <div class="col-xl pt-50"><img src="images/image11.jpg" alt="" class="pb-20">
                             <h4 class="pb-10">Awesome Design</h4>
                             <p >Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. <br> Culpa, corrupti? Aliquam porro <br> nemo quaerat laboriosam ipsum <br> nobis alias atque. Excepturi <br> sed minima aspernatur.</p>
                         </div>
@@ -313,24 +327,24 @@
         <h2>Latest News</h2>
         <div class="container">
             <div class="row pb-50 ">
-                <div class="card mb-4" style="width: 22rem;">
+                <div class="card mb-4" style="width: 22rem; ">
                     <img src="images/image6.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5>Crafting & Marketing</h5>
                         <p>
-                            <span class="color-blue">November 29,2019 </span><span>by <b>Admin</b></span>
+                            <span class="color-blue"><b>November 29,2019</b></span><span> by <b>Admin</b></span>
                         <p class="card-text">Lorem ipsum dolor sit, amet <br> consectetur adipisicing elit. Labore
                             itaque
                             <br> iste voluptas autem error inventore.
                         </p>
                     </div>
                 </div>
-                <div class="card mb-4" style="width: 22rem;">
+                <div class="card mb-4" style="width: 22rem; ">
                     <img src="images/image7.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5>Crafting & Marketing</h5>
                         <p>
-                            <span class="color-blue">November 29,2019 </span><span>by <b>Admin</b></span>
+                            <span class="color-blue"><b>November 29,2019</b> </span><span> by <b>Admin</b></span>
                         <p class="card-text">Lorem ipsum dolor sit, amet <br> consectetur adipisicing elit. Labore
                             itaque
                             <br> iste voluptas autem error inventore.
@@ -342,7 +356,7 @@
                     <div class="card-body">
                         <h5>Crafting & Marketing</h5>
                         <p>
-                            <span class="color-blue">November 29,2019 </span><span>by <b>Admin</b></span>
+                            <span class="color-blue"><b>November 29,2019</b></span><span> by <b>Admin</b></span>
                         <p class="card-text">Lorem ipsum dolor sit, amet <br> consectetur adipisicing elit. Labore
                             itaque
                             <br> iste voluptas autem error inventore.

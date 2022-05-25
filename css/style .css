@@ -1,23 +1,53 @@
 @import url(reset.css);
-img{
+
+img {
     max-width: 100%;
 }
-a{
-    word-break:break-all;
-}
+
 /*Flex Utilities*/
 /* why because p-3 is 1 rem in bootstrap */
-.flex-gap-3{
+.flex-gap-3 {
     gap: 1rem;
 }
 
-.flex-gap-2{
+.flex-gap-2 {
     gap: 0.5rem;
+}
+.button-primary{
+    background-color: #2f3c73;
+    color: #fff;
+    padding: 10px 30px;
+    font-family: 'ubuntu' sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    border: none;
+   
+    text-decoration: none;
+
+}
+a:hover{
+    color: #f5f5f5;
+   
+}
+
+.button-primary:hover{
+    color: #2f3c73;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 
-/* main-header section */
 
+/* navbar section */
+.responsive-menu-container {
+    display: none;
+}
+
+.navbar .row .responsive-menu-container i {
+    color: #F08080;
+    margin-top: 10px;
+}
 
 .navbar .row {
     padding: 20px 14%;
@@ -52,7 +82,6 @@ a{
 
 .navbar .menu ul li a {
     text-decoration: none;
-    color: #000;
     font-size: 15px;
     color: #F08080;
 }
@@ -61,6 +90,10 @@ a{
     font-size: 20px;
 }
 
+/*End navbar section */
+
+
+/* main-header section */
 /* Coursel section */
 .carousel-button {
     height: 20px;
@@ -104,12 +137,17 @@ a{
 
 .description {
     text-align: center;
+
+}
+
+.first-section .description {
+    padding: 0 1.5rem 0 1.5rem;
 }
 
 .first-section .row {
     text-align: center;
     justify-content: space-around;
-    
+
 }
 
 
@@ -127,12 +165,12 @@ a{
     color: #FFF;
     padding: 1.5rem;
 
-    
+
 }
 
 
 .second-section .row .col-xl-4 {
-   
+
     padding: 0px;
 }
 
@@ -146,9 +184,9 @@ a{
 
 /* third section */
 
-.third-section .row .col-xl-4{
+.third-section .row .col-xl-4 {
     text-align: center;
-}  
+}
 
 .third-section .row .col-md-4 {
     padding: 0;
@@ -163,8 +201,9 @@ a{
 .third-section {
     background-color: #f5f5f5;
 }
-.third-section .row{
-    padding:  1.5rem;
+
+.third-section .row {
+    padding: 1.5rem;
 }
 
 
@@ -182,11 +221,15 @@ a{
 }
 
 .fifth-section .description {
-    padding: 100px 0px 50px 0px;
+    padding: 2.5rem 1.5rem;
 }
 
 .fifth-section .row {
     justify-content: space-around;
+}
+
+.fifth-section .row .card {
+    margin: 0 3rem;
 }
 
 .fifth-section .row .card img {
@@ -211,16 +254,20 @@ a{
 
 /* sixth section */
 
+.sixth-section .description {
+    padding: 2.5rem 1.5rem;
+}
 
-.sixth-section .row .col-6 {
+.sixth-section .row .col-xl-6 {
+    text-align: center;
 
     padding: 0;
 
 }
 
-.sixth-section .row .col-6 .row .col {
-    text-align: left;
-    padding-top: 65px;
+.sixth-section .row .col-xl-6 .row {
+    text-align: center;
+
 
 }
 
@@ -235,7 +282,12 @@ a{
 
 .seventh-section .row {
     justify-content: space-around;
-    
+
+}
+
+.seventh-section .row .card {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .seventh-section .row .card .card-body {
@@ -257,16 +309,19 @@ a{
     background-color: #303d72;
     color: #FFF;
     justify-content: space-between;
-    align-items: center;
-    margin-left:0px;
-    margin-right: 0px;
+    text-align: center;
     padding: 1.5rem;
-    
+
+}
+.eight-section .row button:hover{
+    color: #f5f5f5;
+    background-color: #2f3c73;
+    cursor: pointer;
 }
 
 
 
-    
+
 
 .eight-section .row button {
     color: #303d72;
@@ -274,6 +329,7 @@ a{
     width: 130px;
     font-family: 'ubuntu', sans-serif;
     font-weight: 300;
+    margin-left: 27%;
 }
 
 
@@ -286,8 +342,9 @@ a{
 }
 
 
-.footer .row{
+.footer .row {
     padding: 1.5rem 0;
+    text-align: center;
 }
 
 .footer .row .col-xl-3 .icons {
@@ -308,7 +365,7 @@ a{
     height: 32px;
     width: 32px;
     border-radius: 20px;
-    padding: 5px 0px 0px 7px;
+    padding: 5px 0px 0px 1px;
 
 }
 
@@ -318,7 +375,7 @@ a{
 /* super-footer section */
 .super-footer p {
     padding: 20px 30px;
-    text-align: left;
+    text-align: center;
 
 }
 
@@ -330,59 +387,241 @@ a{
     position: relative;
 }
 
-.underline::after{
-   content: '';
+.underline::after {
+    content: '';
     width: 60px;
     border-bottom: 3px solid;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     position: absolute;
-    left:0;
+    left: 0;
     bottom: -10px;
 
 }
 
 /*End underline  */
 
-/* Responsive */
-@media screen and (min-width:1200px) {
-    .second-section .row .col-xl-8 .description{
-        text-align: left;
-        padding: 120px 200px;
-    }  
 
-    .second-section .row .col-xl-8{
-        padding: 0;
+
+/* Responsive */
+
+@media screen and (max-width:500px) {
+    .fifth-section .row .card{
+        margin: 0;
+    }
+    .button-primary{
+        background-color: #2f3c73;
+        color: #fff;
+        padding: 10px 10px;
+        font-family: 'ubuntu' sans-serif;
+        font-weight: 300;
+        margin-bottom: 20px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+    
+    }
+
+
+}
+
+
+@media screen and (min-width:768px) {
+    .third-section .row {
+        flex-wrap: nowrap;
+        padding: 0%;
+    }
+
+    .third-section .row .col-xl-4 {
+        padding: 60px 35px 35px 35px;
+    }
+
+    .eight-section .row {
+
+        background-color: #303d72;
+        color: #FFF;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+
+        padding: 50px ;
+
+    }
+    .eight-section .row h4{
+        text-align: left;
     }
     
-    .third-section .row{
-        padding:0rem;
+
+}
+@media screen and (min-width:1024px){
+    .third-section .row {
+        flex-wrap: nowrap;
+        padding: 0%;
+    }
+
+    .third-section .row .col-xl-4 {
+        padding: 100px 35px 35px 35px;
+    }
+    .fifth-section .row .card  {
+        margin: 0 6rem;
+    }
+    .seventh-section .row{
+        margin: 0 7rem;
+    }
+    
+
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+
+
+
+    .responsive-menu-container {
+
+
+
+        display: flex;
+
+
+
+
+    }
+
+
+    .responsive-menu {
+        display: none;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        top: 155%;
+        width: 100%;
+        padding: .5rem;
+        background-color: #ccc;
+        background-image: repeating-radial-gradient(#F08080, #F08080 10%, #f1b884);
+
+    }
+
+
+
+    .responsive-menu-container.open .responsive-menu {
+        display: block;
+        text-align: center;
+
+    }
+
+    
+}
+
+
+
+@media screen and (min-width:1200px) {
+
+    .first-section {
+        padding: 100px 0px;
+    }
+
+    .second-section .row .col-xl-8 .description {
+        text-align: left;
+        padding: 120px 200px;
+    }
+
+    .second-section .row .col-xl-8 {
+        padding: 0;
+    }
+
+    .third-section .row {
+        padding: 0rem;
 
     }
 
     .third-section .row .col-xl-4 {
-       
-        padding: 100px 120px;
+
+        padding: 118px 157px;
         text-align: left;
     }
-    .third-section .row .col-md-4 img{
+
+    .third-section .row .col-md-4 img {
         height: 400px;
     }
-    .seventh-section .row  {
-        padding-bottom: 50px;
+
+    .fifth-section .description {
+        padding: 100px 1.5rem 30px 1.5rem;
+    }
+
+    .fifth-section .row .card {
+        margin: 0 3rem;
+    }
+
+    .sixth-section .row .col-xl-6 .row {
+        text-align: left;
+    }
+
+
+    .seventh-section .row {
+        padding-bottom: 70px;
         margin: 0;
+    }
+
+    .seventh-section .row .card {
+        margin-left: 0;
+        margin-right: 0;
     }
 
 
     .eight-section .row {
+
+        background-color: #303d72;
+        color: #FFF;
+        justify-content: space-between;
+
+        margin: 0px;
+
         padding: 50px 210px 50px 210px;
     }
 
-   
-    .footer .row  {
-   
-        padding: 50px 20px 0px 20px ;
-        
+    .eight-section .row h4 {
+        text-align: left;
     }
+
+
+    .footer .row {
+
+        padding: 50px 20px 0px 20px;
+        text-align: left;
+    }
+
+    .footer .row .col-xl-3 .icons i {
+        background-color: black;
+        color: white;
+        height: 32px;
+        width: 32px;
+        border-radius: 20px;
+        padding: 5px 0px 0px 7px;
+
+    }
+
+    .super-footer p {
+        padding: 20px 30px;
+        text-align: left;
+    }
+
+    .description {
+        text-align: center;
+        padding: 100px 1.5rem 30px 1.5rem;
+    }
+
+    .fifth-section .row {
+        flex-wrap: nowrap;
+    }
+   
+    
+
 }
 
 /*End Responsive */
