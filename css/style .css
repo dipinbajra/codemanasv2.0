@@ -90,6 +90,60 @@ a:hover{
     font-size: 20px;
 }
 
+/* popup section */
+.modal-wrapper{
+   
+    max-width: 600px;
+    margin: 0 auto;
+}
+.active{
+    opacity: 1;
+}
+
+/* .modal-container .cross{
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    padding: 0px 10px;
+    color: red;
+    background-color: transparent;
+    display: flex;
+    font-size: 15px;
+    flex-direction: row;
+    align-content: center;
+} */
+
+.modal-wrapper .modal-container input{  
+    height:35px ;
+    width: 500px;
+    
+   
+
+}
+button.mfp-close {
+    top: -4px;
+    right: 33%;
+}
+/* .modal-container .cross:hover{
+    color: #6B46C1;
+
+} */
+
+
+
+
+
+
+.btn-purple{
+    background-color: #6B46C1;
+   
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+
+}
+/*End popup section */
+
 /*End navbar section */
 
 
