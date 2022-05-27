@@ -13,6 +13,50 @@ img {
 .flex-gap-2 {
     gap: 0.5rem;
 }
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+    }
+
+
+/* mfp utilities */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;}
+.mfp-no-margins .mfp-container {
+        padding: 0;
+    }
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom .mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: .9;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+/*End mfp utilities */
 .button-primary{
     background-color: #2f3c73;
     color: #fff;
@@ -120,10 +164,7 @@ a:hover{
    
 
 }
-button.mfp-close {
-    top: -4px;
-    right: 33%;
-}
+
 /* .modal-container .cross:hover{
     color: #6B46C1;
 
@@ -142,6 +183,10 @@ button.mfp-close {
     font-size: 14px;
 
 }
+
+
+
+
 /*End popup section */
 
 /*End navbar section */
@@ -465,7 +510,7 @@ button.mfp-close {
 
 /* Responsive */
 
-@media screen and (min-width:320px) {
+@media only screen and (min-width:320px)     {
     .main-header .swiper-wrapper .swiper-slide img{
         height: 300px;
         width: 100%;
@@ -485,12 +530,36 @@ button.mfp-close {
         text-decoration: none;
     
     }
+     .modal-wrapper .modal-container input {
+        height: 35px;
+        width: 200px;
+    }
+
+    .modal-wrapper{
+   
+        max-width: 200px;
+        margin: 0 auto;
+       
+    }
+    .btn-purple {
+        background-color: #6B46C1;
+        color: #fff;
+        border-radius: 4px;
+        font-size: 14px;
+        margin: 5px 66px;
+    }
+    button.mfp-close {
+        top: -38px;
+        right: 15%;
+    }
+    
+    
 
 
 }
 
 
-@media screen and (min-width:768px) {
+@media only screen and (min-width:768px) {
     .main-header .swiper-wrapper .swiper-slide img{
         height: 500px;
         width: 100%;
@@ -519,10 +588,28 @@ button.mfp-close {
     .eight-section .row h4{
         text-align: left;
     }
+    button.mfp-close {
+        top: -35px;
+        right: 11%;
+    }
+    .modal-wrapper{
+   
+        max-width: 600px;
+        margin: 0 auto;
+       
+    } 
+    .modal-wrapper .modal-container input {
+        height: 35px;
+        width: 500px;
+    }
+    .btn-purple {
+       margin: 0;
+       
+    }
     
 
 }
-@media screen and (min-width:1024px){
+@media only screen and (min-width:1024px){
     .main-header .swiper-wrapper .swiper-slide img{
         height: 700px;
         width: 100%;
@@ -541,6 +628,25 @@ button.mfp-close {
     .seventh-section .row{
         margin: 0 7rem;
     }
+    .modal-wrapper{
+   
+        max-width: 600px;
+        margin: 0 auto;
+       
+    } 
+    .modal-wrapper .modal-container input {
+        height: 35px;
+        width: 500px;
+    }
+    .btn-purple {
+        
+        margin: 0;
+       
+    }
+    button.mfp-close {
+        top: -35px;
+        right: 21%;
+    }
     
 
 }
@@ -553,19 +659,9 @@ button.mfp-close {
         display: none;
     }
 
-
-
     .responsive-menu-container {
-
-
-
         display: flex;
-
-
-
-
-    }
-
+        }
 
     .responsive-menu {
         display: none;
@@ -573,31 +669,39 @@ button.mfp-close {
         left: 50%;
         right: 50%;
         transform: translate(-50%, -50%);
-        top: 155%;
+        top: 185%;
         width: 100%;
         padding: .5rem;
         background-color: #ccc;
         background-image: repeating-radial-gradient(#F08080, #F08080 10%, #f1b884);
         opacity: 0.9;
         transition:ease-in-out;
-       
-
-    }
-
-
+        }
+   
+    
 
     .responsive-menu-container.open .responsive-menu {
         display: block;
         text-align: center;
 
     }
+    /* .modal-wrapper .modal-container input {
+        height: 35px;
+        width: 348px;
+    }
 
-    
+    .modal-wrapper{
+   
+        max-width:420px;
+        margin: 0 auto;
+       
+    } */
 }
+    
 
 
 
-@media screen and (min-width:1200px) {
+@media only screen and (min-width:1200px) {
 
     .first-section {
         padding: 100px 0px;
@@ -697,8 +801,31 @@ button.mfp-close {
         flex-wrap: nowrap;
     }
    
-    
+    button.mfp-close {
+       
+            top: -46px;
+            right: 30%;
+        
+    }
+
+
+    .modal-wrapper{
+   
+        max-width: 600px;
+        margin: 0 auto;
+       
+    } 
+    .modal-wrapper .modal-container input {
+        height: 35px;
+        width: 500px;
+    }
+    .btn-purple {
+       
+       margin: 0;
+    }
+   
 
 }
+
 
 /*End Responsive */
